@@ -4,7 +4,7 @@ import com.shubham.betterreadsdataloader.author.Author;
 import com.shubham.betterreadsdataloader.author.AuthorRepository;
 import com.shubham.betterreadsdataloader.book.Book;
 import com.shubham.betterreadsdataloader.book.BookRepository;
-import connection.DataStaxAstraProperties;
+import com.shubham.betterreadsdataloader.connection.DataStaxAstraProperties;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,6 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.cassandra.CqlSessionBuilderCustomizer;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
@@ -25,7 +26,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 

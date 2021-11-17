@@ -1,6 +1,8 @@
 datadump.location:
-  author: /home/shubham/Documents/betterreads-data-loader/src/main/resources/test-authors.txt
-  works: /home/shubham/Documents/betterreads-data-loader/src/main/resources/test-works.txt
+#  author: /home/shubham/Documents/datadumps/ol_dump_authors_2021-10-13.txt
+  author: /home/shubham/Documents/datadumps/test-authors.txt
+  works: /home/shubham/Documents/datadumps/test-works.txt
+#  works: /home/shubham/Documents/datadumps/ol_dump_works_2021-10-13.txt
 
 spring:
   data:
@@ -8,7 +10,7 @@ spring:
       keyspace-name: main
       username: MushveMaKOONQhaJSSwRMYIb
       password: CR7fW3_WbxCZ0B6I,yr389_IzywXc0nQ064jD8kQ1Zv-eC72DXFM5iKBzFcZ7nYsWX+bs29iTb_8ZBEZN1j1.TIsdbjiwX6Y4ZWY90MtjZjGyeTkYP5o2rZZ.5iSBYDK
-      schema-action: create_if_not_exists
+      schema-action: recreate
       request:
         timeout: 10s
       connection:
